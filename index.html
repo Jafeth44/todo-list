@@ -18,8 +18,8 @@
 			</h1>
 		</nav>
 		<main>
-			<form onsubmit="addListItem(event)" id="form">
-				<label for="title">Title: </label>
+			<form onsubmit="addItemToList(event)" id="form">
+				<label for="title">Task: </label>
 				<input type="text" id="title" />
 				<label for="description">description: </label>
 				<textarea id="description" cols="30" rows="10"></textarea>
@@ -31,5 +31,7 @@
 			<div id="list-grid"></div>
 		</main>
 		<script src="/js/toggleForm.js"></script>
+		<script src="/js/itemGrid.js"></script>
+		<script src="/js/list.js"></script>
 	</body>
 </html>
