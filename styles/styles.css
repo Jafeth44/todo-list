@@ -47,7 +47,7 @@ form.visible {
     flex-direction: column;
     justify-content: center;
     border-radius: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.576);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
     -webkit-animation: fadeIn 0.5s;
@@ -57,6 +57,7 @@ form.visible {
 
 form input,
 textarea {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     font-size: 2rem;
     background-color: rgba(107, 138, 162, 0.351);
     border: 1px solid rgba(107, 138, 162, 0.351);
