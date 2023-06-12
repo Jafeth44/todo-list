@@ -1,37 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>ToDoList</title>
-		<link rel="stylesheet" href="/styles/styles.css" />
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-		/>
-	</head>
-	<body>
-		<nav>
-			<h1 class="main-title">
-				<i class="fas fa-list-check"></i> ToDo List
-			</h1>
-		</nav>
-		<main>
-			<form onsubmit="addItemToList(event)" id="form">
-				<label for="title">Task: </label>
-				<input type="text" id="title" />
-				<label for="description">description: </label>
-				<textarea id="description" cols="30" rows="10"></textarea>
-				<input type="submit" id="submit-button" />
-			</form>
-			<button id="new-item" onclick="toggleItemForm(event)">
-				<i class="fas fa-list-ul"> +</i>
-			</button>
-			<div id="list-grid"></div>
-		</main>
-		<script src="/js/toggleForm.js"></script>
-		<script src="/js/itemGrid.js"></script>
-		<script src="/js/list.js"></script>
-	</body>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>ToDoList</title>
+	<link rel="stylesheet" href="/styles/styles.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+</head>
+
+<body>
+	<nav>
+		<h1 class="main-title">
+			<i class="fas fa-list-check"></i> ToDo List
+		</h1>
+	</nav>
+	<main>
+		<form onsubmit="addItemToList(event)" id="form">
+			<label for="title">Task: </label>
+			<input type="text" id="title" />
+			<label for="description">description: </label>
+			<textarea id="description" cols="30" rows="10"></textarea>
+			<input type="submit" id="submit-button" />
+		</form>
+		<button id="new-item" onclick="toggleItemForm(event)">
+			<i class="fas fa-list-ul"> +</i>
+		</button>
+		<div id="list-grid"></div>
+	</main>
+	<script src="/js/toggleForm.js"></script>
+	<script src="/js/itemGrid.js"></script>
+	<script src="/js/list.js"></script>
+</body>
+
 </html>
